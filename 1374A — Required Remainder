@@ -1,0 +1,25 @@
+
+#solved by python3
+
+t=int(input()) #testcase
+ 
+for i in range(t):
+  
+    x,y,n=[int(x) for x in input().split()] #multiple Input
+   
+    num=n%x 
+    
+    #check the number with y
+    if num>y: 
+        k=(n-num)/x 
+        res=x*int(k)+y 
+        a=int(res)
+        print(a)
+    
+    #check the number with y
+    elif num==y:
+        print(n)
+    
+    #check the number with y
+    else:               
+        print(n-num-x+y)
