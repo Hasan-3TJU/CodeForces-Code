@@ -1,0 +1,16 @@
+
+import math
+ 
+t=int(input())
+ 
+for i in range(t):
+    a=int(input())
+    
+    res=float(a/2)
+    #print(res)
+    
+    if res >= (int(res)+0.5):
+        print(math.ceil(res))
+ 
+    else:
+        print(math.floor(res))
