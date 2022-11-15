@@ -1,0 +1,17 @@
+import sys
+ 
+def next_unique_year(year):
+    for i in range(year+1, sys.maxsize):
+        s=str(i)
+        
+        uni_digit = set([char for char in s])
+        
+        if(len(s)==len(uni_digit)):
+            print(i)
+            break
+ 
+ 
+#driver code
+ 
+year=int(input())
+next_unique_year(year)
