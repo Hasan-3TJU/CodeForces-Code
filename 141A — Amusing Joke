@@ -1,0 +1,28 @@
+s1 = input()
+s2 = input()
+s3 = input()
+ 
+sorted_word=sorted(s1+s2)
+#print(sorted_word)
+ 
+sorted_word1=sorted(s3)
+#print(sorted_word1)
+ 
+# find ascii value using list comprehension
+ 
+ASCII_value = [ord(ch) for ch in s1]
+ASCII_value1 = [ord(ch) for ch in s2]
+ASCII_value2 = [ord(ch) for ch in s3]
+ 
+ 
+a=sum(map(ord, s1))
+b=sum(map(ord, s2))
+c=sum(map(ord, s3))
+ 
+if sorted_word==sorted_word1:
+    if(a+b==c):
+        print("YES")
+    else:
+        print("NO")
+else:
+    print("NO")
