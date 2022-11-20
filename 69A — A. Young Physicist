@@ -1,0 +1,19 @@
+t = int(input())
+li = []
+ 
+for i in range(t):
+ 
+    li.append(list(map(int, input().split())))
+    
+cx, cy, cz=0, 0, 0
+    
+for i in range(t):
+    cx+=li[i][0]
+    cy+=li[i][1]
+    cz+=li[i][2]
+    
+if cx==0 and cy==0 and cz==0:
+    print("YES")
+        
+else:
+    print("NO")
